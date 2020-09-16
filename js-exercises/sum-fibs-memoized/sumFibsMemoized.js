@@ -14,8 +14,7 @@ function sumFibs(num) {
 }
 function cacheFunction(fn) {
   const cache = {};
-  return (...args) => {
-    const n = args[0];
+  return (n) => {
     if (cache[n]) {
       return cache[n];
     }
