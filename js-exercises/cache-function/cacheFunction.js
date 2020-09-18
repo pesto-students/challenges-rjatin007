@@ -6,7 +6,6 @@ function cacheFunction(cb) {
         return cacheObject[arg].result;
       }
       cacheObject[arg] = {
-        func: cb,
         result: cb(arg) ? cb(arg) : null,
       };
       return cacheObject[arg].result;
