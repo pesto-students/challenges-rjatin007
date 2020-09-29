@@ -1,0 +1,3 @@
+function alternatingCharacters() {}
+
+export { alternatingCharacters };
